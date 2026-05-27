@@ -1057,46 +1057,196 @@ FEATURES ONLY STYLES
 
 <!-- CONTACT -->
 
+<!-- CONTACT / SUPPORT SECTION -->
+
+<!-- CONTACT / SUPPORT SECTION -->
+
 <section id="contact" class="fade">
 
-    <h2 class="section-title">
-        Start Your Project
-    </h2>
+    <!-- FONT AWESOME -->
 
-    <form
-    class="contact-form"
-    id="contactForm"
-    >
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-        <input type="text" name="name" placeholder="Your Name" required>
+    <style>
 
-        <input type="email" name="email" placeholder="Your Email" required>
+    /* =========================
+    CONTACT / SUPPORT
+    ========================= */
 
-        <input type="text" name="project" placeholder="Project Type">
+    .support-wrap{
+        max-width:1000px;
+        margin:auto;
+        text-align:center;
+    }
 
-        <textarea
-        name="message"
-        placeholder="Tell us about your vision..."
-        required
-        ></textarea>
+    .support-title{
+        font-size:58px;
+        font-weight:800;
+        margin-bottom:20px;
+    }
 
-        <button type="submit" class="btn btn-primary">
-            Send Message
-        </button>
+    .support-sub{
+        max-width:700px;
+        margin:0 auto 60px;
+        color:#bfbfbf;
+        line-height:1.8;
+        font-size:18px;
+    }
 
-        <p id="formStatus" style="
-            color:#4DA6FF;
-            text-align:center;
-            margin-top:10px;
-            display:none;
-        ">
-            Message sent successfully.
+    .support-buttons{
+        display:flex;
+        justify-content:center;
+        gap:30px;
+        flex-wrap:wrap;
+    }
+
+    .social-btn{
+        min-width:240px;
+        padding:20px 30px;
+        border-radius:22px;
+        text-decoration:none;
+        color:white;
+        font-size:18px;
+        font-weight:600;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:15px;
+        transition:0.45s;
+        border:1px solid rgba(255,255,255,0.08);
+        backdrop-filter:blur(14px);
+        position:relative;
+        overflow:hidden;
+    }
+
+    .social-btn::before{
+        content:'';
+        position:absolute;
+        inset:0;
+        background:rgba(255,255,255,0.08);
+        opacity:0;
+        transition:0.4s;
+    }
+
+    .social-btn:hover::before{
+        opacity:1;
+    }
+
+    .social-btn:hover{
+        transform:translateY(-8px) scale(1.03);
+    }
+
+    .social-btn i{
+        font-size:24px;
+        z-index:2;
+    }
+
+    .social-btn span{
+        z-index:2;
+    }
+
+    /* TELEGRAM */
+
+    .telegram-btn{
+        background:linear-gradient(135deg,#229ED9,#1B7DB1);
+        box-shadow:0 0 35px rgba(34,158,217,0.35);
+    }
+
+    .telegram-btn:hover{
+        box-shadow:0 0 55px rgba(34,158,217,0.55);
+    }
+
+    /* INSTAGRAM */
+
+    .instagram-btn{
+        background:linear-gradient(135deg,#FD1D1D,#E1306C,#833AB4);
+        box-shadow:0 0 35px rgba(225,48,108,0.35);
+    }
+
+    .instagram-btn:hover{
+        box-shadow:0 0 55px rgba(225,48,108,0.55);
+    }
+
+    /* GMAIL */
+
+    .gmail-btn{
+        background:linear-gradient(135deg,#EA4335,#C5221F);
+        box-shadow:0 0 35px rgba(234,67,53,0.35);
+    }
+
+    .gmail-btn:hover{
+        box-shadow:0 0 55px rgba(234,67,53,0.55);
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+        .support-title{
+            font-size:42px;
+        }
+
+        .social-btn{
+            width:100%;
+        }
+
+    }
+
+    </style>
+
+    <div class="support-wrap">
+
+        <h2 class="support-title">
+            Contact Us
+        </h2>
+
+        <p class="support-sub">
+            Reach out anytime through your favorite platform.
+            We usually respond quickly and help bring your vision to life.
         </p>
 
-    </form>
+        <div class="support-buttons">
+
+            <!-- TELEGRAM -->
+
+            <a
+             href="https://t.me/visualforgesupport"
+            target="_blank"
+            class="social-btn telegram-btn"
+            >
+                <i class="fa-brands fa-telegram"></i>
+                <span>Telegram</span>
+            </a>
+
+            <!-- INSTAGRAM -->
+
+            <a
+             href="https://www.instagram.com/v1sual_forge?igsh=MWN4dWhwYnVlcGRleQ%3D%3D&utm_source=qr"
+            target="_blank"
+            class="social-btn instagram-btn"
+            >
+                <i class="fa-brands fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+
+            <!-- GMAIL -->
+
+            <a
+            href="mailto:visualforgesuport@gmail.com"
+            class="social-btn gmail-btn"
+            >
+                <i class="fa-solid fa-envelope"></i>
+                <span>Gmail</span>
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
-
 <!-- FOOTER -->
 
 <footer>
@@ -1110,9 +1260,9 @@ FEATURES ONLY STYLES
     </div>
 
     <div class="socials">
-        <a href="#">Instagram</a>
-        <a href="#">Telegram</a>
-        <a href="#">Facebook</a>
+        <a href="https://www.instagram.com/v1sual_forge?igsh=MWN4dWhwYnVlcGRleQ%3D%3D&utm_source=qr">Instagram</a>
+        <a href="https://t.me/visualforgesupport">Telegram</a>
+        <a href="mailto:visualforgesuport@gmail.com">Gmail</a>
     </div>
 
 </footer>
